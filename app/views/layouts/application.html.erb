@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BgApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="content">
+    <div id="header">
+    <div id="nav">
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+    </div>
+      <h2>Blog Application</h2>
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;Welcome</h2>
+    </div>	
+      <h2></h2>
+    <p>
+      <img class="left" src="/assets/blog1.jpg" ></img>
+      <%= yield %>
+    
+      <h2></h2>
+      <img class="right" src="/assets/blog3.jpg" ></img>
+      <blockquote> </blockquote>
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thank you for visiting!!!</h2>
+      <div id="footer">
+        By Kartik
+      </div>
+    </div>
+  </body>
+</html>
